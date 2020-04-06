@@ -1,5 +1,5 @@
 package tw.org.iii.brad.brad20;
-//http://docs.ros.org/api/rtabmap/html/MultipartUtility_8java_source.html
+//http://docs.ros.org/api/rtabmap/html/MultipartUtility_8java_source.html    *8 複製貼上
 import java.io.BufferedReader;
 
 import java.io.File;
@@ -94,7 +94,7 @@ public class MultipartUtility {
 
         // checks server's status code first
         int status = httpConn.getResponseCode();
-//        if (status == 201) {          //註解掉
+//        if (status == 201) {          //*9 註解掉
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     httpConn.getInputStream()));
             String line = null;
@@ -103,7 +103,7 @@ public class MultipartUtility {
             }
             reader.close();
             httpConn.disconnect();
-//        } else {                      //註解掉
+//        } else {                      //*9 註解掉
 //            throw new IOException("Server returned non-OK status: " + status + ", msg: " + httpConn.getResponseMessage());
 //        }
 
